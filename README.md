@@ -96,6 +96,8 @@ Want to submit a useful code-chunk? Please submit as a [Pull Request](https://gi
 | 24 | `2020-06-09` | [African-American Achievements](data/2020/2020-06-09/readme.md) | [Wikipedia](https://en.wikipedia.org/wiki/List_of_African-American_inventors_and_scientists) & [Wikipedia](https://en.wikipedia.org/wiki/List_of_African-American_firsts) | [David Blackwell](https://www.stltoday.com/news/local/obituaries/david-blackwell-fought-racism-became-world-famous-statistician/article_8ea41058-5f35-5afa-9c3a-007200c5c179.html) & [Petition for David Blackwell](https://www.change.org/p/american-statistical-association-rename-the-fisher-lecture-after-david-blackwell?recruiter=1107887809) |
 | 25 | `2020-06-16` | [African-American History](data/2020/2020-06-16/readme.md) | [Black Past](https://www.blackpast.org/donate/) & [Census](https://www.census.gov/content/dam/Census/library/working-papers/2002/demo/POP-twps0056.pdf) & [Slave Voyages](https://slavevoyages.org/) | [The Guardian](https://www.theguardian.com/news/2019/aug/15/400-years-since-slavery-timeline) |
 | 26 | `2020-06-23` | [Caribou Locations](data/2020/2020-06-23/readme.md) | [Movebank](https://www.movebank.org/cms/movebank-content/about-movebank) | [B.C. Ministry of Environment](https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/wildlife-wildlife-habitat/caribou/science_update_final_from_web_jan_2014.pdf)  |
+| 27 | `2020-06-30` | [Claremont Run of X-Men](data/2020/2020-06-30/readme.md) | [Claremont Run](http://www.claremontrun.com/) | [Wikipedia - Uncanny X-Men](https://en.wikipedia.org/wiki/Uncanny_X-Men)  |
+| 28 | `2020-07-07` | [Coffee Ratings](data/2020/2020-07-07/readme.md) | [James LeDoux](https://github.com/jldbc/coffee-quality-database) & [Coffee Quality Database](https://github.com/jldbc/coffee-quality-database)  | [Yorgos Askalidis - TWD](https://towardsdatascience.com/the-data-speak-ethiopia-has-the-best-coffee-91f88ed37e84)  |
 
 ***  
 
@@ -103,29 +105,29 @@ Want to submit a useful code-chunk? Please submit as a [Pull Request](https://gi
 
 | Link | Description |
 | --- | --- |
-| [:link:](https://www.rfordatasci.com) | The R4DS Online Learning Community Website|
-| [:link:](http://r4ds.had.co.nz/) | The R for Data Science textbook |
-| [:link:](https://carbon.now.sh/) | Carbon for sharing beautiful code pics |
-| [:link:](https://github.com/MilesMcBain/gistfo) | Post gist to Carbon from RStudio |
-| [:link:](https://github.com/yonicd/carbonate) | Post to Carbon from RStudio |
-| [:link:](https://github.com/join) | Join GitHub! |
-| [:link:](https://guides.github.com/activities/hello-world/) | Basics of GitHub |
-| [:link:](https://happygitwithr.com/) | Learn how to use GitHub with R |
-| [:link:](http://ggplot2.tidyverse.org/reference/ggsave.html) | Save high-rez `ggplot2` images |
+| [Link](https://www.rfordatasci.com) | The R4DS Online Learning Community Website|
+| [Link](http://r4ds.had.co.nz/) | The R for Data Science textbook |
+| [Link](https://carbon.now.sh/) | Carbon for sharing beautiful code pics |
+| [Link](https://github.com/MilesMcBain/gistfo) | Post gist to Carbon from RStudio |
+| [Link](https://github.com/yonicd/carbonate) | Post to Carbon from RStudio |
+| [Link](https://github.com/join) | Join GitHub! |
+| [Link](https://guides.github.com/activities/hello-world/) | Basics of GitHub |
+| [Link](https://happygitwithr.com/) | Learn how to use GitHub with R |
+| [Link](http://ggplot2.tidyverse.org/reference/ggsave.html) | Save high-rez `ggplot2` images |
 
 # Useful data sources
 
 | Link | Description |
 | --- | --- |
-| [:link:](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0) | Data is Plural collection |
-| [:link:](https://github.com/BuzzFeedNews/everything/blob/master/README.md) | BuzzFeedNews GitHub |
-| [:link:](https://github.com/theeconomist/) | The Economist GitHub |
-| [:link:](https://cran.r-project.org/web/packages/fivethirtyeight/fivethirtyeight.pdf) | The `fivethirtyeight` data package 
-| [:link:](https://github.com/TheUpshot) | The Upshot by NY Times |
-| [:link:](https://github.com/baltimore-sun-data) | The Baltimore Sun Data Desk |
-| [:link:](https://github.com/datadesk) | The LA Times Data Desk |
-| [:link:](https://github.com/OpenNewsLabs/news-graphics-team) | Open News Labs |
-| [:link:](https://t.co/BMvJO2dT1o) | BBC Data Journalism team |
+| [Link](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0) | Data is Plural collection |
+| [Link](https://github.com/BuzzFeedNews/everything/blob/master/README.md) | BuzzFeedNews GitHub |
+| [Link](https://github.com/theeconomist/) | The Economist GitHub |
+| [Link](https://cran.r-project.org/web/packages/fivethirtyeight/fivethirtyeight.pdf) | The `fivethirtyeight` data package 
+| [Link](https://github.com/TheUpshot) | The Upshot by NY Times |
+| [Link](https://github.com/baltimore-sun-data) | The Baltimore Sun Data Desk |
+| [Link](https://github.com/datadesk) | The LA Times Data Desk |
+| [Link](https://github.com/OpenNewsLabs/news-graphics-team) | Open News Labs |
+| [Link](https://t.co/BMvJO2dT1o) | BBC Data Journalism team |
 
 ***
 
@@ -135,10 +137,10 @@ Only books available freely online are sourced here. Feel free to add to the lis
 
 | Link | Description |
 | --- | --- |
-| [:link:](https://serialmentor.com/dataviz/) | Fundamentals of Data Viz by Claus Wilke |
-| [:link:](https://bookdown.org/rdpeng/artofdatascience/) | The Art of Data Science by Roger D. Peng & Elizabeth Matsui |
-| [:link:](https://www.tidytextmining.com/) | Tidy Text Mining by Julia Silge & David Robinson |
-| [:link:](https://geocompr.robinlovelace.net/) | Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow |
-| [:link:](https://socviz.co/index.html#preface) | Data Visualization by Kieran Healy |
-| [:link:](http://www.cookbook-r.com/Graphs/) | `ggplot2` cookbook by Winston Chang |
- [:link:](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535) | BBC Data Journalism team |
+| [Link](https://serialmentor.com/dataviz/) | Fundamentals of Data Viz by Claus Wilke |
+| [Link](https://bookdown.org/rdpeng/artofdatascience/) | The Art of Data Science by Roger D. Peng & Elizabeth Matsui |
+| [Link](https://www.tidytextmining.com/) | Tidy Text Mining by Julia Silge & David Robinson |
+| [Link](https://geocompr.robinlovelace.net/) | Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow |
+| [Link](https://socviz.co/index.html#preface) | Data Visualization by Kieran Healy |
+| [Link](http://www.cookbook-r.com/Graphs/) | `ggplot2` cookbook by Winston Chang |
+ [Link](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535) | BBC Data Journalism team |
