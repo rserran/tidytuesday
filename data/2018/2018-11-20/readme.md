@@ -1,10 +1,10 @@
-# FiveThirtyEight Thanksgiving Dinner or [Transgender Day of Rembrance (TDoR)](https://github.com/rfordatascience/tidytuesday/blob/master/data/2018-11-20/TDoR_readme.md)
+# FiveThirtyEight Thanksgiving Dinner or [Transgender Day of Rembrance (TDoR)](https://github.com/rfordatascience/tidytuesday/blob/main/data/2018-11-20/TDoR_readme.md)
 
 Data originally from [fivethirtyeight](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015).
 
 # Thanksgiving 2015
 
-This directory contains the data behind the story [Here’s What Your Part of America Eats On Thanksgiving](http://fivethirtyeight.com/features/heres-what-your-part-of-america-eats-on-thanksgiving).
+This directory contains the data behind the story [Here's What Your Part of America Eats On Thanksgiving](http://fivethirtyeight.com/features/heres-what-your-part-of-america-eats-on-thanksgiving).
 
 Using a SurveyMonkey poll, they asked 1,058 respondents on Nov. 17, 2015 the following questions about their Thanksgiving:
 

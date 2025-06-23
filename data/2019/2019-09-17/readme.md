@@ -16,9 +16,9 @@ Lastly, a [`fivethirtyeight` article](https://fivethirtyeight.com/features/the-n
 # Get the data!
 
 ```
-park_visits <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-17/national_parks.csv")
-state_pop <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-17/state_pop.csv")
-gas_price <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-17/gas_price.csv")
+park_visits <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-09-17/national_parks.csv")
+state_pop <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-09-17/state_pop.csv")
+gas_price <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-09-17/gas_price.csv")
 ```
 
 # Data Dictionary
@@ -56,10 +56,18 @@ gas_price <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/
 |gas_current  |double | Gas price in that year (dollars/gallon) |
 |gas_constant |double | Gas price (constant 2015 dollars/gallon) |
 
+## `locations.csv`
+
+|variable     |class  |description |
+|:------------|:------|:-----------|
+|lon          |double | longitude |
+|lat          |double | latitude |
+|gnis_id           |character | ID for shapefile and long-lat lookup |
+
 
 # Cleaning Script
 
-```{r}
+```r
 
 library(tidyverse)
 library(rvest)

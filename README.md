@@ -1,146 +1,91 @@
-![](static/tt_logo.png)
+![](static/tt_logo.png){fig-alt="Logo for the TidyTuesday project, represented by the word TidyTuesday over a messy splash of black paint"}
 
-## A weekly social data project in R
+**TidyTuesday** is a weekly social data project. 
+All are welcome to participate! 
+Please remember to share the code used to generate your results!
 
-A weekly data project aimed at the R ecosystem. As this project was borne out of the `R4DS Online Learning Community` and the `R for Data Science` textbook, an emphasis was placed on understanding how to summarize and arrange data to make meaningful charts with `ggplot2`, `tidyr`, `dplyr`, and other tools in the `tidyverse` ecosystem. However, any code-based methodology is welcome - just please remember to share the code used to generate the results.
+**TidyTuesday** is organized by the [Data Science Learning Community](https://dslc.io). 
+[Join our Slack](https://dslc.io/join) for free online help with R, Python, and other data-related topics, or to participate in a data-related book club!
 
-***
+## Goals
 
-Join the `R4DS Online Learning Community` in the weekly `#TidyTuesday` event! Every week we post a raw dataset, a chart or article related to that dataset, and ask you to explore the data. While the dataset will be “tamed”, it will not always be tidy! As such you might need to apply various `R for Data Science` techniques to wrangle the data into a true tidy format. The goal of `TidyTuesday` is to apply your R skills, get feedback, explore other’s work, and connect with the greater `#RStats` community! As such we encourage everyone of all skills to participate! 
+Our over-arching goal for TidyTuesday is to provide real-world datasets so that people can learn to work with data.
 
-We will have many sources of data and want to emphasize that **no causation** is implied. There are various moderating variables that affect all data, many of which might not have been captured in these datasets. As such, our guidelines are to use the data provided to practice your data tidying and plotting techniques. Participants are invited to consider for themselves what nuancing factors might underlie these relationships. 
-
-The intent of Tidy Tuesday is to provide a safe and supportive forum for individuals to practice their **wrangling** and **data visualization** skills independent of drawing conclusions. While we understand that the two are related, the focus of this practice is purely on building skills with real-world data.
-
-All data will be posted on the data sets page on Monday. It will include the link to the original article (for context) and to the data set. 
-
-We welcome all newcomers, enthusiasts, and experts to participate, but be mindful of a few things:
-
-1. The data set comes from the source article or the source that the article credits. Be mindful that the data is what it is and Tidy Tuesday is designed to help you practice **data visualization** and **basic data wrangling** in R.  
-2. Again, the data is what it is! You are welcome to explore beyond the provided dataset, but the data is provided as a "toy" dataset to practice techniques on.  
-3. This is NOT about criticizing the original article or graph. Real people made the graphs, collected or acquired the data! Focus on the provided dataset, learning, and improving your techniques in R.  
-4. This is NOT about criticizing or tearing down your fellow `#RStats` practitioners or their code! Be supportive and kind to each other! Like other's posts and help promote the `#RStats` community!  
-4. Use the hashtag #TidyTuesday on Twitter if you create your own version and would like to share it.
-5. Include a picture of the visualisation when you post to Twitter.  
-6. Include a copy of the code used to create your visualization when you post to Twitter. Comment your code wherever possible to help yourself and others understand your process!  
-7. Focus on improving your craft, even if you end up with something simple!  
-8. Give credit to the original data source whenever possible.  
+- [x] For 2024, our goal was to be used in at least 10 courses. Our survey indicates that we are used in at least 30 courses!
+- [ ] For 2025, our goal is to crowdsource the curation of TidyTuesday datasets.
 
 ***
 
-## Submitting Datasets
+## How to Participate
 
-`TidyTuesday` is built around open datasets that are found in the "wild" or submitted as [Issues](https://github.com/rfordatascience/tidytuesday/issues) on our GitHub.
+- Data is [posted to social media](dataset_announcements.md) every Monday morning. Follow the instructions in the new post for how to download the data in R, Python, or Julia, or download the data directly from GitHub for use in your favorite data exploration tool.
+- [Explore the data](https://r4ds.hadley.nz/), watching out for interesting relationships. We would like to emphasize that you should not draw conclusions about **causation** in the data. There are various moderating variables that affect all data, many of which might not have been captured in these datasets. As such, our suggestion is to use the data provided to practice your data tidying and plotting techniques, and to consider for yourself what nuances might underlie these relationships.
+- Create a visualization, a model, a [Quarto](https://quarto.org/) report, a [shiny app](https://shiny.posit.co/), or some other piece of data-science-related output, using R, Python, Julia, or another programming language.
+  - Exploring the TidyTuesday data in Python? Posit has some extra resources for you! Have you tried making a [Quarto dashboard](https://quarto.org/docs/dashboards/)? Find videos and other resources in [Posit's PydyTuesday repo](https://github.com/posit-dev/python-tidytuesday-challenge).
+  - Deploy or share your work however you want! If you'd like a super easy way to publish your work, give [Connect Cloud](https://connect.posit.cloud/) a try.
+- [Share your output and the code used to generate it](sharing.md) on social media with the #TidyTuesday hashtag.
+  - R; TidyTuesday originated in the #RStats community on social media. Add that hashtag if you explore TidyTuesday data in R!
+  - Python: Add the #PydyTuesday hashtag so that Posit has the chance to highlight your work, too!
+  - Julia: Add the #TidierTuesday hashtag if you want the [Tidier Org](https://github.com/TidierOrg) to share your visuals!
 
-If you find a dataset that you think would be interesting, you can approach it through two ways:
-
-## Two Ways to Contribute
-
-1. **Submit the dataset as an [Issue](https://github.com/rfordatascience/tidytuesday/issues)**  
-a. Find an interesting dataset  
-b. Find a report, blog post, article etc relevant to the data   
-c. Submit the dataset as an [Issue](https://github.com/rfordatascience/tidytuesday/issues) along with a link to the article  
-
-2. **Create an entire TidyTuesday challenge!**  
-a. Find an interesting dataset  
-b. Find a report, blog post, article etc relevant to the data (or create one yourself!)  
-c. Let us know you're found something interesting and are working on it by filing an [Issue](https://github.com/rfordatascience/tidytuesday/issues) on our GitHub  
-d. Provide a link or the raw data and a cleaning script for the data  
-e. Write a basic `readme.md` file using the minimal template below and make sure to give yourself credit! 
-
-#### `readme.md` template
-
-```
-# INPUT THE SUBJECT TITLE OF THE DATASET
-
-The data this week comes from [SOURCE_OF_DATA](URL_TO_DATA). 
-
-This [ARTICLE_SOURCE](LINK_TO_ARTICLE) talks about SUBJECT TITLE in greater detail.
-
-Credit: [YOUR NAME](Twitter handle or other social media profile)
-```
-
-## Submitting Code Chunks
-Want to submit a useful code-chunk? Please submit as a [Pull Request](https://github.com/rfordatascience/tidytuesday/tree/master/community_resources/code_chunks) and follow the [guide](https://github.com/rfordatascience/tidytuesday/blob/master/community_resources/code_chunks/readme.md).
+**You can also [curate a dataset for a future TidyTuesday](pr_instructions.md)!**  
 
 ***
 
-# DataSets
-## [2018](data/2018) | [2019](data/2019) | [2020](data/2020)  
+## DataSets
 
-| Week | Date | Data | Source | Article
-| :---: | :---: | :--- | :--- | :---|
-| 1 | `2019-12-31` | Bring your own data from 2019! | | |
-| 2 | `2020-01-07` | [Australian Fires](data/2020/2020-01-07/readme.md) | [Bureau of Meteorology](http://www.bom.gov.au/climate/data/stations/)| [NY Times](https://www.nytimes.com/interactive/2020/01/02/climate/australia-fires-map.html) & [BBC](https://www.bbc.com/news/world-australia-50951043) |
-| 3 | `2020-01-14` | [Passwords](data/2020/2020-01-14/readme.md) | [Knowledge is Beautiful](https://docs.google.com/spreadsheets/d/1cz7TDhm0ebVpySqbTvrHrD3WpxeyE4hLZtifWSnoNTQ/edit#gid=21) | [Information is Beautiful](https://informationisbeautiful.net/visualizations/top-500-passwords-visualized/) |
-| 4 | `2020-01-21` | [Song Genres](data/2020/2020-01-21/readme.md) | [`spotifyr` ](https://www.rcharlie.com/spotifyr/) | [Kaylin Pavlik](https://www.kaylinpavlik.com/classifying-songs-genres/) |
-| 5 | `2020-01-28` | [San Francisco Trees](data/2020/2020-01-28/readme.md) | [data.sfgov.org](https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq) | [SF Weekly](https://www.sfweekly.com/news/feature/trees-of-life/) |
-| 6 | `2020-02-04` | [NFL Attendance](data/2020/2020-02-04/readme.md) | [Pro Football Reference](https://www.pro-football-reference.com/years/2002/index.htm) | [Casino.org](https://www.casino.org/record-and-attendance/) |
-| 7 | `2020-02-11` | [Hotel Bookings](data/2020/2020-02-11/readme.md) | [Antonio, Almeida, and Nunes, 2019](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5) | [`tidyverts`](https://tsibble.tidyverts.org/) |
-| 8 | `2020-02-18` | [Food's Carbon Footprint](data/2020/2020-02-18/readme.md) | [nu3](https://www.nu3.de/blogs/nutrition/food-carbon-footprint-index-2018) | [`r-tastic` by Kasia Kulma](https://r-tastic.co.uk/post/from-messy-to-tidy/) |
-| 9 | `2020-02-25` | [Measles Vaccination](data/2020/2020-02-25/readme.md) | [The Wallstreet Journal](https://github.com/WSJ/measles-data) | [The Wall Street Journal](https://www.wsj.com/graphics/school-measles-rate-map/) |
-| 10 | `2020-03-03` | [NHL Goals](data/2020/2020-03-03/readme.md) | [HockeyReference.com](https://www.hockey-reference.com/leaders/goals_career.html) | [Washington Post](https://www.washingtonpost.com/graphics/2020/sports/capitals/ovechkin-700-goals/?utm_campaign=wp_graphics&utm_medium=social&utm_source=twitter)|
-| 11 | `2020-03-10` | [College Tuition, Diversity, and Pay](data/2020/2020-03-10/readme.md) | [TuitionTracker.org](https://www.tuitiontracker.org/) | [TuitionTracker.org](https://www.tuitiontracker.org/school.html?unitid=228778) |
-| 12 | `2020-03-17` | [The Office](data/2020/2020-03-17/readme.md) | [`schrute`](https://bradlindblad.github.io/schrute/index.html) | [The Pudding](https://pudding.cool/2017/08/the-office/) |
-| 13 | `2020-03-24` | [Traumatic Brain Injury](data/2020/2020-03-24/readme.md) | [CDC](https://www.cdc.gov/mmwr/volumes/68/wr/mm6810a1.htm) | [CDC Traumatic Brain Injury Report](https://www.cdc.gov/mmwr/volumes/68/wr/mm6810a1.htm) |
-| 14 | `2020-03-31` | [Beer Production](data/2020/2020-03-31/readme.md) | [TTB](https://www.ttb.gov/beer/statistics) | [Brewers Association](https://www.brewersassociation.org/insights/cans-bottles-craft-beer-packaging-trends/) |
-| 15 | `2020-04-07` | [Tour de France](data/2020/2020-04-07/readme.md) | [`tdf` package](https://github.com/alastairrushworth/tdf) | [Alastair Rushworth's blog](https://alastairrushworth.github.io/Visualising-Tour-de-France-data-in-R/) |
-| 16 | `2020-04-14` | [Best Rap Artists](data/2020/2020-04-14/readme.md) | [BBC Music](http://www.bbc.com/culture/story/20191007-the-greatest-hip-hop-songs-of-all-time-who-voted) | [Simon Jockers at Datawrapper](https://blog.datawrapper.de/best-hip-hop-songs-of-all-time-visualized/) |
-| 17 | `2020-04-21` | [GDPR Violation](data/2020/2020-04-21/readme.md) | [Privacy Affairs](https://www.privacyaffairs.com/gdpr-fines/) | [Roel Hogervorst](https://blog.rmhogervorst.nl/blog/2020/04/08/scraping-gdpr-fines/) |
-| 18 | `2020-04-28` | [Broadway Musicals](data/2020/2020-04-28/readme.md) | [Playbill](https://www.playbill.com/grosses) | [Alex Cookson](https://www.alexcookson.com/post/most-successful-broadway-show-of-all-time/) |
-| 19 | `2020-05-05` | [Animal Crossing](data/2020/2020-05-05/readme.md) | [Villager DB](https://github.com/jefflomacy/villagerdb) | [Polygon](https://www.polygon.com/2020/4/2/21201065/animal-crossing-new-horizons-calm-mindfulness-coronavirus-quarantine) |
-| 20 | `2020-05-12` | [Volcano Eruptions](data/2020/2020-05-12/readme.md) | [Smithsonian](https://volcano.si.edu/) | [Axios](https://www.axios.com/chart-every-volcano-that-erupted-since-krakatoa-467da621-41ba-4efc-99c6-34ff3cb27709.html) & [Wikipedia](https://en.wikipedia.org/wiki/Volcano)|
-| 21 | `2020-05-19` | [Beach Volleyball](data/2020/2020-05-19/readme.md) | [BigTimeStats](https://bigtimestats.blog/data/) | [FiveThirtyEight](https://fivethirtyeight.com/features/serving-is-a-disadvantage-in-some-olympic-sports/) & [Wikipedia](https://en.wikipedia.org/wiki/Beach_volleyball#Skills)|
-| 22 | `2020-05-26` | [Cocktails](data/2020/2020-05-26/readme.md) | [Kaggle](https://www.kaggle.com/ai-first/cocktail-ingredients) & [Kaggle](https://www.kaggle.com/jenlooper/mr-boston-cocktail-dataset) | [FiveThirtyEight](https://fivethirtyeight.com/videos/we-got-drunk-on-margaritas-for-science/) |
-| 23 | `2020-06-02` | [Marble Races](data/2020/2020-06-02/readme.md) | [Jelle's Marble Runs](https://www.youtube.com/channel/UCYJdpnjuSWVOLgGT9fIzL0g)| [Randy Olson](http://www.randalolson.com/2020/05/24/a-data-driven-look-at-marble-racing/) |
-| 24 | `2020-06-09` | [African-American Achievements](data/2020/2020-06-09/readme.md) | [Wikipedia](https://en.wikipedia.org/wiki/List_of_African-American_inventors_and_scientists) & [Wikipedia](https://en.wikipedia.org/wiki/List_of_African-American_firsts) | [David Blackwell](https://www.stltoday.com/news/local/obituaries/david-blackwell-fought-racism-became-world-famous-statistician/article_8ea41058-5f35-5afa-9c3a-007200c5c179.html) & [Petition for David Blackwell](https://www.change.org/p/american-statistical-association-rename-the-fisher-lecture-after-david-blackwell?recruiter=1107887809) |
-| 25 | `2020-06-16` | [African-American History](data/2020/2020-06-16/readme.md) | [Black Past](https://www.blackpast.org/donate/) & [Census](https://www.census.gov/content/dam/Census/library/working-papers/2002/demo/POP-twps0056.pdf) & [Slave Voyages](https://slavevoyages.org/) | [The Guardian](https://www.theguardian.com/news/2019/aug/15/400-years-since-slavery-timeline) |
-| 26 | `2020-06-23` | [Caribou Locations](data/2020/2020-06-23/readme.md) | [Movebank](https://www.movebank.org/cms/movebank-content/about-movebank) | [B.C. Ministry of Environment](https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/wildlife-wildlife-habitat/caribou/science_update_final_from_web_jan_2014.pdf)  |
-| 27 | `2020-06-30` | [Claremont Run of X-Men](data/2020/2020-06-30/readme.md) | [Claremont Run](http://www.claremontrun.com/) | [Wikipedia - Uncanny X-Men](https://en.wikipedia.org/wiki/Uncanny_X-Men)  |
-| 28 | `2020-07-07` | [Coffee Ratings](data/2020/2020-07-07/readme.md) | [James LeDoux](https://github.com/jldbc/coffee-quality-database) & [Coffee Quality Database](https://github.com/jldbc/coffee-quality-database)  | [Yorgos Askalidis - TWD](https://towardsdatascience.com/the-data-speak-ethiopia-has-the-best-coffee-91f88ed37e84)  |
+### [2018](data/2018/readme.md) | [2019](data/2019/readme.md) | [2020](data/2020/readme.md)  | [2021](data/2021/readme.md) | [2022](data/2022/readme.md) | [2023](data/2023/readme.md) | [2024](data/2024/readme.md) | [2025](data/2025/readme.md)
+
+| Week|Date       |Data                                                                                    |Source                                                                                                                                                 |Article                                                                                             |
+|----:|:----------|:---------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+|    1|2025-01-07 |Bring your own data to start the year!                                                  |NA                                                                                                                                                     |NA                                                                                                  |
+|    2|2025-01-14 |[posit::conf talks](data/2025/2025-01-14/readme.md)                                     |[posit::conf attendee portal 2023](https://reg.conf.posit.co/flow/posit/positconf23/attendee-portal/page/sessioncatalog), [posit::conf attendee portal 2024](https://reg.conf.posit.co/flow/posit/positconf24/attendee-portal/page/sessioncatalog)|[posit::conf(2025) in-person registration is now open!](https://posit.co/blog/positconf2025-in-person-registration-is-now-open/)|
+|    3|2025-01-21 |[The History of Himalayan Mountaineering Expeditions](data/2025/2025-01-21/readme.md)   |[The Himalayan Database](https://www.himalayandatabase.com/downloads.html)                                                                             |[The Expedition Archives of Elizabeth Hawley](https://www.himalayandatabase.com/index.html)         |
+|    4|2025-01-28 |[Water Insecurity](data/2025/2025-01-28/readme.md)                                      |[US Census Data from tidycensus](https://cran.r-project.org/package=tidycensus)                                                                        |[Mapping water insecurity in R with tidycensus](https://waterdata.usgs.gov/blog/acs-maps/)          |
+|    5|2025-02-04 |[Donuts, Data, and D'oh - A Deep Dive into The Simpsons](data/2025/2025-02-04/readme.md)|[The Simpsons Dataset](https://www.kaggle.com/datasets/prashant111/the-simpsons-dataset)                                                               |[The Simpsons by the Data](https://toddwschneider.com/posts/the-simpsons-by-the-data/)              |
+|    6|2025-02-11 |[CDC Datasets](data/2025/2025-02-11/readme.md)                                          |[CDC datasets uploaded before January 28th, 2025](https://archive.org/details/20250128-cdc-datasets)                                                   |[Trump administration purges websites across federal health agencies](https://www.npr.org/sections/shots-health-news/2025/01/31/nx-s1-5282274/trump-administration-purges-health-websites)|
+|    7|2025-02-18 |[Agencies from the FBI Crime Data API](data/2025/2025-02-18/readme.md)                  |[FBI Crime Data API](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)                                                                            |[Uniform Crime Reporting Program: Still Vital After 90 Years](https://le.fbi.gov/cjis-division/cjis-link/uniform-crime-reporting-program-still-vital-after-90-years-)|
+|    8|2025-02-25 |[Academic Literature on Racial and Ethnic Disparities in Reproductive Medicine in the US](data/2025/2025-02-25/readme.md)|[Racial and ethnic disparities in reproductive medicine in the United States: a narrative review of contemporary high-quality evidence](https://www.ajog.org/article/S0002-9378(24)00775-0/fulltext)|[This Art is HARD](https://katcorr.github.io/this-art-is-HARD/)                                     |
+|    9|2025-03-04 |[Long Beach Animal Shelter](data/2025/2025-03-04/readme.md)                             |[City of Long Beach Animal Care Services](https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/)                 |[Long Beach Animal Care Services Hits Highest Adoption Rate Ever, Surpasses 2024 Strategic Plan Goal](https://www.longbeach.gov/press-releases/long-beach-animal-care-services-hits-highest-adoption-rate-ever-surpasses-2024--strategic-plan-goal/)|
+|   10|2025-03-11 |[Pixar Films](data/2025/2025-03-11/readme.md)                                           |[pixarfilms R package](https://erictleung.com/pixarfilms/index.html)                                                                                   |[Pixar Film Ratings](https://erictleung.com/pixarfilms/articles/pixar_film_ratings.html)            |
+|   11|2025-03-18 |[Palm Trees](data/2025/2025-03-18/readme.md)                                            |[{palmtrees} R package](https://github.com/EmilHvitfeldt/palmtrees)                                                                                    |[PalmTraits 1.0, a species-level functional trait database of palms worldwide](https://www.nature.com/articles/s41597-019-0189-0)|
+|   12|2025-03-25 |[Text Data From Amazon's Annual Reports](data/2025/2025-03-25/readme.md)                |[Amazon's Annual Reports](https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx)                                      |[Exploring The Use of TidyText and LLMs to Understand Amazon’s Annual Reports](https://gregoryvdvinne.github.io/Text-Mining-Amazon-Budgets.html)|
+|   13|2025-04-01 |[Pokemon](data/2025/2025-04-01/readme.md)                                               |[pokemon R package](https://github.com/williamorim/pokemon/)                                                                                           |[Pokemon Data Visualization and Analysis with R](https://medium.com/@hanahshih46/pokemon-data-visualization-and-analysis-with-r-60970c8e37f4)|
+|   14|2025-04-08 |[Timely and Effective Care by US State](data/2025/2025-04-08/readme.md)                 |[Centers for Medicare & Medicaid Services](https://data.cms.gov/provider-data/dataset/apyc-v239)                                                       |[Mapped: Emergency Room Visit Times by State](https://www.visualcapitalist.com/mapped-emergency-room-visit-times-by-state/)|
+|   15|2025-04-15 |[Base R Penguins](data/2025/2025-04-15/readme.md)                                       |[The R Datasets Package](https://www.r-project.org/)                                                                                                   |[Preparing the Palmer Penguins Data for the datasets Package in R](https://zenodo.org/records/14902740)|
+|   16|2025-04-22 |[Fatal Car Crashes on 4/20](data/2025/2025-04-22/readme.md)                             |[420 (data-raw)](https://osf.io/qnrg6/)                                                                                                                |[The Annual Cannabis Holiday and Fatal Traffic Crashes](https://osf.io/preprints/osf/tzcsy_v1)      |
+|   17|2025-04-29 |[useR! 2025 program](data/2025/2025-04-29/readme.md)                                    |[Program for the useR! 2025 conference](https://user2025.r-project.org/)                                                                               |[Program for the useR! 2025 conference](https://user2025.r-project.org/)                            |
+|   18|2025-05-06 |[National Science Foundation Grant Terminations under the Trump Administration](data/2025/2025-05-06/readme.md)|[Grant Watch](https://grant-watch.us/nsf-data.html)                                                                                                    |[National Science Foundation Terminates Hundreds of Active Research Awards](https://www.nytimes.com/2025/04/22/science/trump-national-science-foundation-grants.html)|
+|   19|2025-05-13 |[Seismic Events at Mount Vesuvius](data/2025/2025-05-13/readme.md)                      |[Italian Istituto Nazionale di Geofisica e Vulcanologia (INGV)](https://www.ingv.it/)                                                                  |[Somma Vesuvio](https://www.ingv.it/somma-vesuvio)                                                  |
+|   20|2025-05-20 |[Water Quality at Sydney Beaches](data/2025/2025-05-20/readme.md)                       |[BeachwatchNSW](https://www.beachwatch.nsw.gov.au/waterMonitoring/waterQualityData), [Open-Meteo](https://open-meteo.com/)                             |[Sydney beachgoers urged not to swim in waterways, amid pollution warnings and bull shark activity](https://www.abc.net.au/news/2025-01-10/pollution-risks-in-sydney-beaches-contaminated-waterways-rain/104790856)|
+|   21|2025-05-27 |[Dungeons and Dragons Monsters (2024)](data/2025/2025-05-27/readme.md)                  |[System Reference Document v5.2.1](https://www.dndbeyond.com/srd)                                                                                      |[You Can Now Publish Your Own Creations Using the New Core Rules](https://www.dndbeyond.com/posts/1949-you-can-now-publish-your-own-creations-using-the)|
+|   22|2025-06-03 |[Project Gutenberg](data/2025/2025-06-03/readme.md)                                     |[The R gutenbergr package](https://docs.ropensci.org/gutenbergr/)                                                                                      |[50 years of eBooks: 1971-2021](https://www.gutenberg.org/about/background/50years.html)            |
+|   23|2025-06-10 |[U.S. Judges and the historydata R package](data/2025/2025-06-10/readme.md)             |[Web site of the Federal Judicial Center, via the historydata R package](https://github.com/ropensci/historydata)                                      |[What Does It Mean to Maintain a Package?](https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/)|
+|   24|2025-06-17 |[API Specs](data/2025/2025-06-17/readme.md)                                             |[APIs.guru](https://apis.guru)                                                                                                                         |[Web APIs with R: Introduction](https://dslc-io.github.io/club-wapir/slides/intro.html)             |
+|   25|2025-06-24 |[Measles cases across the world](data/2025/2025-06-24/readme.md)                        |[World Health Organisation Provisional monthly measles and rubella data](https://immunizationdata.who.int/global?topic=Provisional-measles-and-rubella-data&location=)|[Measles cases reach 1,046 in US as infections confirmed in 30 states: CDC](https://abcnews.go.com/Health/measles-cases-reach-1046-us-infections-confirmed-30/story?id=122108194)|
 
 ***  
 
-# Useful links
+## Citing TidyTuesday
 
-| Link | Description |
-| --- | --- |
-| [Link](https://www.rfordatasci.com) | The R4DS Online Learning Community Website|
-| [Link](http://r4ds.had.co.nz/) | The R for Data Science textbook |
-| [Link](https://carbon.now.sh/) | Carbon for sharing beautiful code pics |
-| [Link](https://github.com/MilesMcBain/gistfo) | Post gist to Carbon from RStudio |
-| [Link](https://github.com/yonicd/carbonate) | Post to Carbon from RStudio |
-| [Link](https://github.com/join) | Join GitHub! |
-| [Link](https://guides.github.com/activities/hello-world/) | Basics of GitHub |
-| [Link](https://happygitwithr.com/) | Learn how to use GitHub with R |
-| [Link](http://ggplot2.tidyverse.org/reference/ggsave.html) | Save high-rez `ggplot2` images |
+To cite the **TidyTuesday** repo/project in publications use:
 
-# Useful data sources
+  Data Science Learning Community (2024). Tidy Tuesday: A weekly social data project.
+  https://tidytues.day
 
-| Link | Description |
-| --- | --- |
-| [Link](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0) | Data is Plural collection |
-| [Link](https://github.com/BuzzFeedNews/everything/blob/master/README.md) | BuzzFeedNews GitHub |
-| [Link](https://github.com/theeconomist/) | The Economist GitHub |
-| [Link](https://cran.r-project.org/web/packages/fivethirtyeight/fivethirtyeight.pdf) | The `fivethirtyeight` data package 
-| [Link](https://github.com/TheUpshot) | The Upshot by NY Times |
-| [Link](https://github.com/baltimore-sun-data) | The Baltimore Sun Data Desk |
-| [Link](https://github.com/datadesk) | The LA Times Data Desk |
-| [Link](https://github.com/OpenNewsLabs/news-graphics-team) | Open News Labs |
-| [Link](https://t.co/BMvJO2dT1o) | BBC Data Journalism team |
+A BibTeX entry for LaTeX users is
+
+```
+  @misc{tidytuesday, 
+    title = {Tidy Tuesday: A weekly social data project}, 
+    author = {Data Science Learning Community}, 
+    url = {https://tidytues.day}, 
+    year = {2024} 
+  }
+```
 
 ***
 
-# Data Viz/Science Books
+## Contributing
 
-Only books available freely online are sourced here. Feel free to add to the list
-
-| Link | Description |
-| --- | --- |
-| [Link](https://serialmentor.com/dataviz/) | Fundamentals of Data Viz by Claus Wilke |
-| [Link](https://bookdown.org/rdpeng/artofdatascience/) | The Art of Data Science by Roger D. Peng & Elizabeth Matsui |
-| [Link](https://www.tidytextmining.com/) | Tidy Text Mining by Julia Silge & David Robinson |
-| [Link](https://geocompr.robinlovelace.net/) | Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow |
-| [Link](https://socviz.co/index.html#preface) | Data Visualization by Kieran Healy |
-| [Link](http://www.cookbook-r.com/Graphs/) | `ggplot2` cookbook by Winston Chang |
- [Link](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535) | BBC Data Journalism team |
+Please see our [contributing guide](CONTRIBUTING.md) for ways that you can help!

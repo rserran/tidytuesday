@@ -2,7 +2,7 @@
 
 This week's data is from the New York [Open Data Portal](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/data).
 
-As the dataset is >100 MB (GitHub only allows 100 MB), I uploaded a [data selection](https://github.com/rfordatascience/tidytuesday/blob/master/data/2018-12-11/nyc_restaurants.csv) of 300,000 records sampled at random from the original dataset with `sample_n()`. You could read in the original dataset by using `read_csv` on the link as seen below.
+As the dataset is >100 MB (GitHub only allows 100 MB), I uploaded a [data selection](https://github.com/rfordatascience/tidytuesday/blob/main/data/2018-12-11/nyc_restaurants.csv) of 300,000 records sampled at random from the original dataset with `sample_n()`. You could read in the original dataset by using `read_csv` on the link as seen below.
 
 ```
 library(tidyverse)
@@ -49,7 +49,7 @@ The original dataset can be found [here](https://data.cityofnewyork.us/Health/DO
 
 ## [FiveThirtyEight Article](https://fivethirtyeight.com/features/how-data-made-me-a-believer-in-new-york-citys-restaurant-grades/)
 
-*"How Data Made Me A Believer In New York City’s Restaurant Grades"*
+*"How Data Made Me A Believer In New York City's Restaurant Grades"*
 
 ![](https://fivethirtyeight.com/wp-content/uploads/2014/08/fung-feature-health-grades-1.png?w=575)
 ![](https://fivethirtyeight.com/wp-content/uploads/2014/08/fung-feature-health-grades-2.png?w=575)

@@ -21,9 +21,9 @@ Lastly, we have included some recession dates in the US - the Great Recession (2
 or read the data directly into R!
 
 ```
-state_hpi <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-02-05/state_hpi.csv")
-mortgage_rates <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-02-05/mortgage.csv")
-recession_dates <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-02-05/recessions.csv")
+state_hpi <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-02-05/state_hpi.csv")
+mortgage_rates <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-02-05/mortgage.csv")
+recession_dates <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-02-05/recessions.csv")
 ```
 
 # Data Dictionary
@@ -73,7 +73,7 @@ recession_dates <- readr::read_csv("https://raw.githubusercontent.com/rfordatasc
 
 [source](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/state.html)
 
-R currently contains the following “state” data sets. Note that all data are arranged according to alphabetical order of the state names.
+R currently contains the following "state" data sets. Note that all data are arranged according to alphabetical order of the state names.
 
 state.abb:
 
@@ -150,5 +150,6 @@ df3_clean <- df3 %>%
          time_since_previous_recession_months = substring(time_since_previous_recession_months, 4),
          period_range = case_when(name == "Great Depression" ~ "Aug 1929-Mar 1933",
                                   name == "Great Recession" ~ "Dec 2007-June 2009",
-                                  TRUE ~ period_range))
+                                  TRUE ~ period_range),
+         peak_unemploy_ment = str_replace_all(peak_unemploy_ment, "\\<U[^\\>]*\\>","-"))
 ```

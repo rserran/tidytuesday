@@ -8,7 +8,7 @@ I have uploaded the raw data and the clean data, was a quick `dplyr::pivot_longe
 
 Full details around voting are below - please note that votes are ranked 1-5 (1 is best, 5 is worst), and the voters do not need to submit all 5 votes.
 
-> This year, voting is based on the instant runoff (IRV) voting system, which is similar to the system you might have seen in local elections. When you vote, you can rank up to five of your favourite birds, with #1 indicating your favourite bird, #2 indicating your second favourite bird, and so on. It’s no problem if you want to vote for less than five birds.
+> This year, voting is based on the instant runoff (IRV) voting system, which is similar to the system you might have seen in local elections. When you vote, you can rank up to five of your favourite birds, with #1 indicating your favourite bird, #2 indicating your second favourite bird, and so on. It's no problem if you want to vote for less than five birds.
 
 > How the winner is decided
 
@@ -21,11 +21,11 @@ Full details around voting are below - please note that votes are ranked 1-5 (1 
 # Get the data!
 
 ```
-nz_bird <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-11-19/nz_bird.csv")
+nz_bird <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-11-19/nz_bird.csv")
 
-# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Or read in with tidytuesdayR package (https://github.com/dslc-io/tidytuesdayR)
 # Either ISO-8601 date or year/week works!
-# Install via devtools::install_github("thebioengineer/tidytuesdayR")
+# Install via pak::pak("dslc-io/tidytuesdayR")
 
 tuesdata <- tidytuesdayR::tt_load("2019-11-19")
 tuesdata <- tidytuesdayR::tt_load(2019, week = 47)
@@ -47,7 +47,7 @@ nz_bird <- tuesdata$nz_bird
 
 # Scripts
 
-```{r}
+```r
 library(tidyverse)
 library(here)
 

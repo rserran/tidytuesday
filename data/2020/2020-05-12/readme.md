@@ -29,27 +29,27 @@ Volcano eruptions also can affect the global climate, a [Nature Article](https:/
 > 
 > The analysis not only reinforces evidence that volcanoes can have long-lasting global effects, but it also fleshes out historical accounts, including what happened in the sixth-century Roman Empire. The first eruption, in late 535 or early 536, injected large amounts of sulfate and ash into the atmosphere. According to historical accounts, the atmosphere had dimmed by March 536, and it stayed that way for another 18 months.
 > 
-> Tree rings, and people of the time, recorded cold temperatures in North America, Asia and Europe, where summer temperatures dropped by 2.9 to 4.5 degrees Fahrenheit below the average of the previous 30 years. Then, in 539 or 540, another volcano erupted. It spewed 10 percent more aerosols into the atmosphere than the huge eruption of Tambora in Indonesia in 1815, which caused the infamous “year without a summer”. More misery ensued, including the famines and pandemics. The same eruptions may have even contributed to a decline in the Maya empire, the authors say. 
+> Tree rings, and people of the time, recorded cold temperatures in North America, Asia and Europe, where summer temperatures dropped by 2.9 to 4.5 degrees Fahrenheit below the average of the previous 30 years. Then, in 539 or 540, another volcano erupted. It spewed 10 percent more aerosols into the atmosphere than the huge eruption of Tambora in Indonesia in 1815, which caused the infamous "year without a summer". More misery ensued, including the famines and pandemics. The same eruptions may have even contributed to a decline in the Maya empire, the authors say. 
 
 There are additional datasets from the [Nature article](https://www.nature.com/articles/nature14565#Sec26) available as Excel files, but they are a bit more complicated - feel free to explore at your own discretion! If you use any of the Nature data, please cite w/ DOI: https://doi.org/10.1038/nature14565.
 
 ### Get the data here
 
-```{r}
+```r
 # Get the Data
 
-volcano <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-12/volcano.csv')
-eruptions <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-12/eruptions.csv')
-events <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-12/events.csv')
-tree_rings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-12/tree_rings.csv')
-sulfur <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-12/sulfur.csv')
+volcano <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-05-12/volcano.csv')
+eruptions <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-05-12/eruptions.csv')
+events <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-05-12/events.csv')
+tree_rings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-05-12/tree_rings.csv')
+sulfur <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-05-12/sulfur.csv')
 
-# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Or read in with tidytuesdayR package (https://github.com/dslc-io/tidytuesdayR)
 # PLEASE NOTE TO USE 2020 DATA YOU NEED TO USE tidytuesdayR version ? from GitHub
 
 # Either ISO-8601 date or year/week works!
 
-# Install via devtools::install_github("thebioengineer/tidytuesdayR")
+# Install via pak::pak("dslc-io/tidytuesdayR")
 
 tuesdata <- tidytuesdayR::tt_load('2020-05-12')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 20)
@@ -144,7 +144,7 @@ volcano <- tuesdata$volcano
 
 ### Cleaning Script
 
-```{r}
+```r
 library(readxl)
 library(tidyverse)
 

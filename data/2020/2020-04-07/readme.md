@@ -1,7 +1,7 @@
 ![Tour de France logo](https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Tour_de_France_logo.svg/1200px-Tour_de_France_logo.svg.png)
 # Tour de France
 
-> The Tour de France is an annual men's multiple stage bicycle race primarily held in France, while also occasionally passing through nearby countries. Like the other Grand Tours (the Giro d'Italia and the Vuelta a España), it consists of 21 day-long stages over the course of 23 days. It has been described as "the world’s most prestigious and most difficult bicycle race".
+> The Tour de France is an annual men's multiple stage bicycle race primarily held in France, while also occasionally passing through nearby countries. Like the other Grand Tours (the Giro d'Italia and the Vuelta a España), it consists of 21 day-long stages over the course of 23 days. It has been described as "the world's most prestigious and most difficult bicycle race".
 
 The data this week comes from [Alastair Rushworth's Data Package `tdf`](https://github.com/alastairrushworth/tdf) and [Kaggle](https://www.kaggle.com/jaminliu/a-brief-tour-of-tour-de-france-in-numbers/data).
 
@@ -14,17 +14,17 @@ Some other stats and records can be found on [Wikipedia](https://alastairrushwor
 
 ### Get the data here
 
-```{r}
+```r
 # Get the Data
 
-tdf_winners <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-04-07/tdf_winners.csv')
+tdf_winners <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-04-07/tdf_winners.csv')
 
-# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Or read in with tidytuesdayR package (https://github.com/dslc-io/tidytuesdayR)
 # PLEASE NOTE TO USE 2020 DATA YOU NEED TO USE tidytuesdayR version ? from GitHub
 
 # Either ISO-8601 date or year/week works!
 
-# Install via devtools::install_github("thebioengineer/tidytuesdayR")
+# Install via pak::pak("dslc-io/tidytuesdayR")
 
 tuesdata <- tidytuesdayR::tt_load('2020-04-07')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 15)
@@ -90,7 +90,7 @@ tdf_winners <- tuesdata$tdf_winners
 
 ### Cleaning Script
 
-```{r}
+```r
 library(tidyverse)
 library(tdf) # install at: https://github.com/alastairrushworth/tdf
 

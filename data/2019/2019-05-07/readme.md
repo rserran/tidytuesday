@@ -1,6 +1,6 @@
 # Global Student to Teacher Ratios
 
-"The UNESCO Institute of Statistics collects country-level data on the number of teachers, teacher-to-student ratios, and related figures. You can download the data or explore it in UNESCO’s eAtlas of Teachers or their interactive visualization of teacher supply in Asia"
+"The UNESCO Institute of Statistics collects country-level data on the number of teachers, teacher-to-student ratios, and related figures. You can download the data or explore it in UNESCO's eAtlas of Teachers or their interactive visualization of teacher supply in Asia"
 
 h/t to [Data is Plural 2019/04/03](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0)
 
@@ -12,7 +12,7 @@ There is even more education data at the country level available at [UNESCO Inst
 # Get the data!
 
 ```
-student_ratio <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-07/student_teacher_ratio.csv")
+student_ratio <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-05-07/student_teacher_ratio.csv")
 ```
 
 # Data Dictionary

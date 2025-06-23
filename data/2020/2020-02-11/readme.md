@@ -12,17 +12,17 @@ Also shoutout to a series of packages for time-series analysis and plotting - [`
 
 ### Get the data here
 
-```{r}
+```r
 # Get the Data
 
-hotels <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv')
+hotels <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-02-11/hotels.csv')
 
-# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Or read in with tidytuesdayR package (https://github.com/dslc-io/tidytuesdayR)
 # PLEASE NOTE TO USE 2020 DATA YOU NEED TO USE tidytuesdayR version ? from GitHub
 
 # Either ISO-8601 date or year/week works!
 
-# Install via devtools::install_github("thebioengineer/tidytuesdayR")
+# Install via pak::pak("dslc-io/tidytuesdayR")
 
 tuesdata <- tidytuesdayR::tt_load('2020-02-11')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 7)
@@ -48,8 +48,8 @@ hotels <- tuesdata$hotels
 |babies                         |double    |Number of babies |
 |meal                           |character | Type of meal booked. Categories are presented in standard hospitality meal packages: <br> Undefined/SC – no meal package;<br>BB – Bed & Breakfast; <br> HB – Half board (breakfast and one other meal – usually dinner); <br> FB – Full board (breakfast, lunch and dinner) |
 |country                        |character | Country of origin. Categories are represented in the ISO 3155–3:2013 format |
-|market_segment                 |character | Market segment designation. In categories, the term “TA” means “Travel Agents” and “TO” means “Tour Operators” |
-|distribution_channel           |character | Booking distribution channel. The term “TA” means “Travel Agents” and “TO” means “Tour Operators” |
+|market_segment                 |character | Market segment designation. In categories, the term "TA" means "Travel Agents" and "TO" means "Tour Operators" |
+|distribution_channel           |character | Booking distribution channel. The term "TA" means "Travel Agents" and "TO" means "Tour Operators" |
 |is_repeated_guest              |double    | Value indicating if the booking name was from a repeated guest (1) or not (0) |
 |previous_cancellations         |double    | Number of previous bookings that were cancelled by the customer prior to the current booking |
 |previous_bookings_not_canceled |double    | Number of previous bookings not cancelled by the customer prior to the current booking |
@@ -71,7 +71,7 @@ hotels <- tuesdata$hotels
 
 ### Cleaning Script
 
-```{r}
+```r
 library(tidyverse)
 library(feasts)
 
